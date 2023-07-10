@@ -1,0 +1,165 @@
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+body{
+    --text: white;
+    background-color: #AA775B;
+    --primary-button: #71e1c1;
+    --secondary-button: #021919;
+    --accent: #72f3fd;
+}
+
+header{
+    height: 15vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer {
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;   
+    background-color: #331400;
+    margin-top: -1px
+
+}
+
+
+
+/*====== Custom image ======*/
+.canva {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .animation img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    pointer-events: none;
+  }
+
+  .animation .choc_piece{
+    width: 110px;
+    height: 90px;
+    left: 50%;
+    transform: rotate(-30deg);
+    top: 5px;
+}
+
+.animation .choc_bar{
+    width: 385px;
+    height: 180px;
+    left: calc(50% - 40px);
+    transform: rotate(-30deg);
+    top: -148px;
+}
+
+/*====== Custom image ======*/
+
+
+
+/*====== Custom scrollbar ======*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f12b; 
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #33140098; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(85, 85, 85, 0.762); 
+}
+/*====== Custom scrollbar ======*/
+
+
+
+/*====== Custom animation ======*/
+.bg_style{
+    color: #ffffff;
+    display:grid;
+    justify-content: center;
+    align-items: center;   
+    align-content: center;
+    background-color: #331400;
+    margin-top: -10px
+}
+
+.hidden{
+    padding: min(100px) min(50px) min(100px) min(50px);
+    margin: -5 min(50px) 0 min(50px);
+    border: 5px solid white ;
+    border-radius: 25px;
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateX(-100%);
+    transition: all 1s;
+
+}
+
+.show {
+    padding: min(100px) min(50px) min(100px) min(50px);
+    margin: -5px min(50px) 0 min(50px);
+    border: 5px solid white ;
+    border-radius: 25px;
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+    transition-delay: 200ms
+}
+
+.hidden_portf{
+    padding: min(100px) min(50px) min(100px) min(50px);
+    margin: 0 min(50px) 0 min(50px);
+    border: 5px solid white ;
+    border-radius: 25px;
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateX(-100%);
+    transition: all 1s;
+
+}
+.show_portf {
+    padding: min(100px) min(50px) min(100px) min(50px);
+    margin: 0 min(50px) 0 min(50px);
+    border: 5px solid white ;
+    border-radius: 25px;
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+    transition-delay: 200ms
+}
+
+
+@media (prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+/*====== Custom animation ======*/
