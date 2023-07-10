@@ -1,3 +1,4 @@
 # https://brokenhead.github.io
 
-wave genarator by https://app.haikei.app/
+wave genarator : https://app.haikei.app/
+Javascript Scroll Animation : https://youtu.be/fR0tHI0nFYk
