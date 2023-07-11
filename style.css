@@ -69,6 +69,14 @@ footer {
     top: -148px;
 }
 
+.animation .choc_clack{
+    width: 150px;
+    height: 120px;
+    left: 50%;
+    transform: rotate(-30deg);
+    top: 5px;
+}
+
 /*====== Custom image ======*/
 
 

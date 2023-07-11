@@ -33,6 +33,57 @@ const scene = new ScrollMagic.Scene({
 .addTo(controller)
 
 
+
+
+
+
+
+
+
+
+
+
+
+const clack_timeline = {
+    values:[
+        { opacity:1},
+        { opacity:0.5},
+        { opacity:0}
+ 
+    ]
+}
+
+const tween2 = new TimelineLite();
+
+tween2.add(
+    TweenLite.to(".choc_clack", 0.7 ,{
+        
+        bezier: clack_timeline
+       
+
+    })
+)
+
+const controller2 = new ScrollMagic.Controller();
+
+var scene2 = new ScrollMagic.Scene({
+    triggerElement: ".clack_start",
+    duration: 200,
+    triggerHook:0
+})
+.setTween(tween2) // trigger a TweenMax.to tween
+.addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+.addTo(controller2);
+
+
+
+
+
+
+
+
+
+// showing/hiding elements
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) =>{
         console.log(entry)
