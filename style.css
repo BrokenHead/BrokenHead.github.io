@@ -29,6 +29,18 @@ footer {
 
 }
 
+h2 {
+  margin-bottom: 10px;
+}
+
+h1 {
+  margin-bottom: 7px;
+}
+
+img {
+  cursor: pointer;
+}
+
 
 
 /*====== Custom image ======*/
@@ -127,9 +139,10 @@ footer {
   opacity: 0;
   filter: blur(3px);
   transform: translateX(-100%);
-  transition: all 1s;
+  transition: all 700ms;
 
 }
+
 
 .show {
   padding: clamp(15px, 5%, 50px) clamp(15px, 5%, 50px) clamp(15px, 5%, 50px) clamp(15px, 5%, 50px);
@@ -139,37 +152,31 @@ footer {
   opacity: 1;
   filter: blur(0px);
   transform: translateX(0);
+  transform: translateY(0);
   transition-delay: 200ms
 }
 
+.small-text {
+  font-size: 80%;
+  padding: clamp(10px, 3%, 50px) clamp(15px, 5%, 50px) clamp(10px, 3%, 50px) clamp(15px, 5%, 50px) !important
+}
+
+
 .hidden_portf {
   padding: clamp(15px, 5%, 50px) clamp(15px, 5%, 50px) clamp(15px, 5%, 50px) clamp(15px, 5%, 50px);
-  margin: 15px min(50px) 0 min(50px);;
-  border: 5px groove #5d3a27;
-  border-radius: 25px;
+  margin: 15px min(50px) 0 min(50px);
+
   opacity: 0;
   filter: blur(3px);
-  transform: translateX(-100%);
-  transition: all 1s;
+  transform: translateY(100%);
+  transition: all 700ms;
 }
 
-h2{
-  margin-bottom: 10px;
-}
-
-h1{
-  margin-bottom: 7px;
-}
-
-img{
-  cursor: pointer;
-}
 
 .show_portf {
   padding: clamp(15px, 5%, 50px) clamp(15px, 5%, 50px) clamp(15px, 5%, 50px) clamp(15px, 5%, 50px);
   margin: 1px min(50px) 0 min(50px);
-  border: 5px groove #5d3a27;
-  border-radius: 25px;
+
   opacity: 1;
   filter: blur(0px);
   transform: translateX(0);

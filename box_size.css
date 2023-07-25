@@ -7,10 +7,6 @@
 }
 
 
-.small-text {
-    font-size: 80%;
-}
-
 .s-right {
     width: 21%;
     float: right;
@@ -24,16 +20,14 @@
 
 
 
-
-
 .right {
-    width: 48%;
+    width: 38%;
     float: right;
     margin-left: 4%
 }
 
 .left {
-    width: 48%;
+    width: 58%;
     float: left;
 
 }
