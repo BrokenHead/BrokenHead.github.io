@@ -4,97 +4,406 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="scrolling.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="scrolling.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+
+  <title>Document</title>
+  <style>
+    .top {
+      display: flex;
+    }
+
+    .bottom {
+      display: flex;
+    }
+
+    .right {
+      width: 48%;
+      float: right;
+      margin-left: 4%
+    }
+
+    .left {
+      width: 48%;
+      float: left;
+
+    }
+
+    @media only screen and (max-width: 768px) {
+
+      /* For mobile phones: */
+      .right {
+        width: 100%;
+        margin-left: 0%;
+
+      }
+
+      .left {
+        width: 100%;
+        margin-bottom: 5%;
+      }
+    }
+
+    .ratio-box {
+      padding-top: 62.5%;
+      /* This is your aspect-ratio by https://gist.github.com/PadreZippo/ab27f3f7409510f90421*/
+
+    }
+
+
+    .ratio-inner {
+      display: block;
+      position: absolute;
+
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+
+      width: 100%;
+      height: 100%;
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <div class="scroll"></div>
-        <div class="scroll2"></div>
-    </header>
+  <header>
+    <div class="scroll"></div>
+    <div class="scroll2"></div>
+  </header>
 
 
 
 
 
-<div class="clack_start" style="margin-bottom: 30px"></div>
+  <div class="clack_start" style="margin-bottom: 30px"></div>
 
 
-    <section class="animation">
-        <img class="choc_clack" src="./choc1.png" alt="choc_clack" style="opacity:0">
-        <img class="choc_bar" src="./choc2.png" alt="choc_bar">
-        <img class="choc_piece" src="./choc1.png" alt="choc_piece">
-        <!-- <img class="choc_clack" src="./choc1.png" alt="choc_clack"> -->
-        <img class="choco_wave" src="./layered-waves-haikei.svg" alt="choco_wave">
-        <div class="canva">
-            <div class="top"></div>
-            <div class="body_front"></div>
-            <div class="body_tall"></div>
-            <div class="text"></div>
-            <!-- <img class="chocolate" src="./layered-waves-haikei.svg" alt="choc_piece"> -->
-        </div>
+  <section class="animation">
+    <img class="choc_clack" src="./image/choc1.png" alt="choc_clack" style="opacity:0">
+    <img class="choc_bar" src="./image/choc2.png" alt="choc_bar">
+    <img class="choc_piece" src="./image/choc1.png" alt="choc_piece">
+    <!-- <img class="choc_clack" src="./choc1.png" alt="choc_clack"> -->
+    <img class="choco_wave" src="./layered-waves-haikei.svg" alt="choco_wave">
+    <div class="canva">
+      <div class="top"></div>
+      <div class="body_front"></div>
+      <div class="body_tall"></div>
+      <div class="text"></div>
+      <!-- <img class="chocolate" src="./layered-waves-haikei.svg" alt="choc_piece"> -->
+    </div>
+  </section>
+
+
+  <div class="bg_style">
+    <section class="hidden_portf">
+      <h4>Varist Siriumpunkul</h4>
+      <h2>Fullstack Developer</h2>
+      <p>I'm Fullstack Developer, based in Pathum thani, Thailand. With background in Computer Engineer, I&#39m an active person who seek to learn more on how to work effectively and to how learn to handle a problem in an urgent situations more professionally.
+      </p>
+    </section>
+    <br><br><br>
+    <section class="hidden" style="border: 0;">
+      <h1>Projects / Experience</h1>
     </section>
 
 
-    <div class="bg_style">
-        <section class="hidden_portf">
 
-            <h2>portf</h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-            and
-            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
-            of
-            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-            Aldus
-            PageMaker including versions of Lorem Ipsum.
+    <section class="hidden">
+      <!-- style="width: 48%;float: left;" -->
+      <section class="left">
+        <p>
+          WEB APP
+        </p>
+        <h2>TU Seminar Register</h2>
+        Serve view, Register and printing PDF of personal seminar data with admin system and admin management include auto genarate letter of consent document for accept admin
+        <p>
+          stack :
+        </p>
+        <button></button>
+      </section>
+      <!-- style="width: 48%;float: left;margin-left: 4%" -->
+      <section class="right">
+        <div id="carouselSeminar" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselSeminar" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselSeminar" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselSeminar" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="image/choc1.png" class="d-block w-100 img_click" alt="...">
+              <div class="carousel-caption d-md-block">
+                <h5>First slide label</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="image/choc1.png" class="d-block w-100 img_click" alt="...">
+              <div class="carousel-caption d-md-block">
+                <h5>Second slide label</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="image/choc1.png" class="d-block w-100 img_click" alt="...">
+              <div class="carousel-caption d-md-block">
+                <h5>Third slide label</h5>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselSeminar" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselSeminar" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    </section>
+
+
+    <section class="hidden" style="font-size: 80%;">
+      <!-- style="width: 48%;float: left;" -->
+      <section class="left" style="width: 75%;float: left;">
+        <p>
+          Non programmer responsibility
+        </p>
+        <h2>TU Good Committee etc.</h2>
+        <h6>
+          • TOR making / committee <br>
+          • Goods receipt inspection committee <br>
+          • Goods counting inspection committee <br>
+        </h6>
+        <p>
+          about <br>
+          Procurement Access control system, Inspecting-learning Process of Server and Firewall system installation , Goods counting for TU human resource division
+        </p>
+
+
+        <button></button>
+      </section>
+      <!-- style="width: 48%;float: left;margin-left: 4%" -->
+      <section class="right" style="width: 21%;float: left;margin-left: 4%">
+        <div id="carouselTU_work" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselTU_work" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselTU_work" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselTU_work" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="image/choc1.png" class="d-block w-100 img_click" alt="...">
+              <div class="carousel-caption d-md-block">
+                <h5>First slide label</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="image/choc1.png" class="d-block w-100 img_click" alt="...">
+              <div class="carousel-caption d-md-block">
+                <h5>Second slide label</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="image/choc1.png" class="d-block w-100 img_click" alt="...">
+              <div class="carousel-caption d-md-block">
+                <h5>Third slide label</h5>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselTU_work" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselTU_work" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    </section>
+
+
+    <section class="hidden">
+      <!-- style="width: 48%;float: left;" -->
+      <section class="left">
+        <p>
+          Assistant Manager
+        </p>
+        <h2>S.K CONCRETE</h2>
+        <p>concrete plant and construction business <spin style="font-size: 70%">
+            <br>nakhon ratchasima, Thailand
+          </spin>
+          <br>
+          <br>
+        <h6>
+          Start new business with my family as business start I done so many thing
+        </h6>
+        <p>
+          • Setting Information system<br>
+          • Adjust and setting billing process as committee<br>
+          • Setting product workflow as committee<br>
+          • Find Production Costs and Analyze-set price point<br>
+          • Local marketing<br>
+          • Analyze EBIT and EBITDA (Earnings before interest and taxes)
+        </p>
+
+
+        <button></button>
+      </section>
+      <!-- style="width: 48%;float: left;margin-left: 4%" -->
+      <section class="right">
+        <div id="carouselSK" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselSK" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselSK" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselSK" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/image/SK_page.jpg" class="d-block w-100 img_click" alt="...">
+              <div class="carousel-caption d-md-block">
+                <h5>First slide label</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/image/choc1.png" class="d-block w-100 img_click" alt="...">
+              <div class="carousel-caption d-md-block">
+                <h5>Second slide label</h5>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="/image/choc1.png" class="d-block w-100 img_click" alt="...">
+              <div class="carousel-caption d-md-block">
+                <h5>Third slide label</h5>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselSK" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselSK" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    </section>
+
+
+    <section class="hidden">
+      <div class="top">
+        <section class="left" style="margin-bottom: 5%">
+          <p>
+            Final Year Engineering Projects / Hobby
+          </p>
+          <h2>Chocolate 3D Printer / Model making</h2>
+          Serve view, Register and printing PDF of personal seminar data with admin system and admin management include auto genarate letter of consent document for accept admin
         </section>
 
-        <section class="hidden">
-            <h2>header 1</h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-            and
-            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
-            of
-            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-            Aldus
-            PageMaker including versions of Lorem Ipsum.
+        <section class="right" style="margin-bottom: 5%">
+          <div id="carouselModel" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselModel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselModel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="ratio-box"> <iframe class="ratio-inner" title="peacock" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="100%" height="100%" src="https://sketchfab.com/models/3e55a77ab6bc42b3936cc250e4f2eb7e/embed?autostart=1&ui_theme=dark&autospin=0.5"> </iframe>
+                  <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/peacock-3e55a77ab6bc42b3936cc250e4f2eb7e?utm_medium=embed&utm_campaign=share-popup&utm_content=3e55a77ab6bc42b3936cc250e4f2eb7e" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> peacock </a> by <a href="https://sketchfab.com/varist.siri?utm_medium=embed&utm_campaign=share-popup&utm_content=3e55a77ab6bc42b3936cc250e4f2eb7e" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> varist.siri </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=3e55a77ab6bc42b3936cc250e4f2eb7e" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="ratio-box"> <iframe class="ratio-inner" title="Prushka Cartridge" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="100%" height="100%" src="https://sketchfab.com/models/eb240b52c6fa49b2bce80077c6a5f13a/embed"> </iframe>
+                  <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/prushka-cartridge-eb240b52c6fa49b2bce80077c6a5f13a?utm_medium=embed&utm_campaign=share-popup&utm_content=eb240b52c6fa49b2bce80077c6a5f13a" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Prushka Cartridge </a> by <a href="https://sketchfab.com/varist.siri?utm_medium=embed&utm_campaign=share-popup&utm_content=eb240b52c6fa49b2bce80077c6a5f13a" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> varist.siri </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=eb240b52c6fa49b2bce80077c6a5f13a" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p>
+                </div>
+              </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselModel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselModel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </section>
-        <section class="hidden">
-            <h2>header 2</h2>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's
-            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-            make a type specimen book. It has survived not only five centuries, but also the leap into electronic
-            typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
-            sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
-            PageMaker
-            including versions of Lorem Ipsum.
+      </div>
+
+      <div class="bottom" style=" border-top: 4px dotted #5d3a27;">
+        <section class="left" style="margin-top: 3%;">
+          <p>University activities</p>
+          <h2>Chocolate 3D Printer / Model making</h2>
         </section>
-        <section class="hidden">
-            <h2>header 2</h2>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's
-            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-            make a type specimen book. It has survived not only five centuries, but also the leap into electronic
-            typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
-            sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
-            PageMaker
-            including versions of Lorem Ipsum.
+        <section class="right" style="margin-top: 3%;">
+          <div id="carouselAct" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselAct" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselAct" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselAct" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/image/choc1.png" class="d-block w-100 img_click" alt="...">
+                <div class="carousel-caption d-md-block">
+                  <h5>First slide label</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/image/choc1.png" class="d-block w-100 img_click" alt="...">
+                <div class="carousel-caption d-md-block">
+                  <h5>Second slide label</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/image/choc1.png" class="d-block w-100 img_click" alt="...">
+                <div class="carousel-caption d-md-block">
+                  <h5>Third slide label</h5>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAct" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselAct" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </section>
-    </div>
-    <footer>
-        <img class="choco_wave" src="./layered-waves-haikei_footer.svg" alt="choco_wave">
-        <center>© 2023 Varist S</center>
-    </footer>
+      </div>
+    </section>
+
+
+  </div>
+  <footer>
+    <img class="choco_wave" src="./layered-waves-haikei_footer.svg" alt="choco_wave">
+    <center>© 2023 Varist S</center>
+  </footer>
 
 </body>
+<script>
+  var img_new_page = document.getElementsByClassName("img_click");
+
+  for (var num in img_new_page) {
+    img_new_page[num].onclick = function() {
+      // console.log(this.src)
+      window.open(this.src, '_blank');
+    }
+  }
+</script>
 <script defer src="app.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"></script>

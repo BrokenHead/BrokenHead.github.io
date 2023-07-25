@@ -35,15 +35,6 @@ const scene = new ScrollMagic.Scene({
 
 
 
-
-
-
-
-
-
-
-
-
 const clack_timeline = {
     values: [
         { opacity: 1 },
@@ -85,7 +76,7 @@ var scene2 = new ScrollMagic.Scene({
 // showing/hiding elements
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry)
+        // console.log(entry)
         if (entry.isIntersecting) {
             entry.target.classList.add("show")
         }
@@ -99,7 +90,7 @@ hiddenElements.forEach((el) => observer.observe(el))
 
 const observer_portf = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry)
+        // console.log(entry)
         if (entry.isIntersecting) {
             entry.target.classList.add("show_portf")
         }
