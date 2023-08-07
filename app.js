@@ -100,3 +100,17 @@ const observer_portf = new IntersectionObserver((entries) => {
 
 const hiddenElements_portf = document.querySelectorAll(".hidden_portf")
 hiddenElements_portf.forEach((el) => observer_portf.observe(el))
+
+
+const observer_icon = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        // console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show_icon")
+        }
+
+    })
+})
+
+const hiddenElements_icon = document.querySelectorAll(".hidden_icon")
+hiddenElements_icon.forEach((el) => observer_icon.observe(el))
