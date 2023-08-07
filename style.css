@@ -220,7 +220,7 @@ display: block;
   opacity: 0;
   filter: blur(3px);
   transform: translateX(-100%);
-  transition: all 600ms;
+  transition: all 700ms;
 
 }
 
@@ -234,26 +234,26 @@ display: block;
 }
 
 .stack_p:nth-child(2){
-  transition-delay: 250ms;
+  transition-delay: 270ms;
 }
 
 .stack_p:nth-child(3){
-  transition-delay: 300ms;
+  transition-delay: 340ms;
 }
 
 .stack_p:nth-child(4){
-  transition-delay: 350ms;
+  transition-delay: 410ms;
 }
 .stack_p:nth-child(5){
-  transition-delay: 400ms;
+  transition-delay: 580ms;
 }
 
 .stack_p:nth-child(6){
-  transition-delay: 450ms;
+  transition-delay: 650ms;
 }
 
 .stack_p:nth-child(7){
-  transition-delay: 500ms;
+  transition-delay: 720ms;
 }
 
 
@@ -264,3 +264,4 @@ display: block;
 }
 
 /*====== Custom animation ======*/
+
