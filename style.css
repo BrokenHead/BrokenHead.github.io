@@ -263,5 +263,11 @@ display: block;
   }
 }
 
+.Description{
+  color: white;
+  text-shadow: 0.7px 0 0 #000, 0 -0.7px 0 #000, 0 0.7px 0 #000, -0.7px 0 0 #000;
+}
+
+
 /*====== Custom animation ======*/
 
