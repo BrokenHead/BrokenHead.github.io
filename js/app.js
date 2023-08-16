@@ -28,7 +28,7 @@ const scene = new ScrollMagic.Scene({
     triggerHook: 0
 })
     .setTween(tween)
-    .addIndicators()
+    // .addIndicators()
     .setPin(".animation")
     .addTo(controller)
 
@@ -62,7 +62,7 @@ var scene2 = new ScrollMagic.Scene({
     triggerHook: 0
 })
     .setTween(tween2) // trigger a TweenMax.to tween
-    .addIndicators({ name: "1 (duration: 0)" }) // add indicators (requires plugin)
+    // .addIndicators({ name: "1 (duration: 0)" }) // add indicators (requires plugin)
     .addTo(controller2);
 
 

@@ -4,6 +4,10 @@
   font-family: Bricolage Grotesque, sans-serif;
 }
 
+/* * {
+  outline: 1px solid red;
+} */
+
 button{
   margin: 2%;
 }
@@ -166,7 +170,7 @@ img {
   border-radius: 25px;
   opacity: 0;
   filter: blur(3px);
-  transform: translateX(-100%);
+  transform: translateX(-50%);
   transition: all 700ms;
 
 }
@@ -196,7 +200,7 @@ img {
 
   opacity: 0;
   filter: blur(3px);
-  transform: translateY(100%);
+  transform: translateY(40%);
   transition: all 700ms;
 }
 
@@ -208,7 +212,7 @@ img {
   opacity: 1;
   filter: blur(0px);
   transform: translateX(0);
-  transition-delay: 200ms
+  transition-delay: 0ms
 }
 
 
@@ -220,7 +224,7 @@ display: block;
 .hidden_icon {
   opacity: 0;
   filter: blur(3px);
-  transform: translateX(-100%);
+  transform: translateX(-30%);
   transition: all 700ms;
 
 }
