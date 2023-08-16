@@ -8,22 +8,24 @@
   outline: 1px solid red;
 } */
 
-button{
+button {
   margin: 2%;
 }
 
-.carousel{
+.carousel {
   border-radius: 10px;
   overflow: hidden;
 }
 
 .carousel-inner {
   height: 0;
-  padding-bottom: 100%; /* this sets carousel aspect ratio (4:1 here) */
+  padding-bottom: 100%;
+  /* this sets carousel aspect ratio (4:1 here) */
 }
 
 .carousel-item {
-  position: absolute !important; /* Bootstrap is insistent */
+  position: absolute !important;
+  /* Bootstrap is insistent */
   top: 0;
   right: 0;
   bottom: 0;
@@ -31,8 +33,10 @@ button{
 }
 
 .carousel-item img {
-  height: 100%; /* Bootstrap handles width already */
-  object-fit: cover; /* or 'contain' if you want stretch instead of crop */
+  height: 100%;
+  /* Bootstrap handles width already */
+  object-fit: cover;
+  /* or 'contain' if you want stretch instead of crop */
 }
 
 body {
@@ -216,9 +220,9 @@ img {
 }
 
 
-.stacks_p{
-  margin-top:1%;
-display: block;
+.stacks_p {
+  margin-top: 1%;
+  display: block;
 }
 
 .hidden_icon {
@@ -238,26 +242,27 @@ display: block;
   transition-delay: 200ms
 }
 
-.stack_p:nth-child(2){
+.stack_p:nth-child(2) {
   transition-delay: 270ms;
 }
 
-.stack_p:nth-child(3){
+.stack_p:nth-child(3) {
   transition-delay: 340ms;
 }
 
-.stack_p:nth-child(4){
+.stack_p:nth-child(4) {
   transition-delay: 410ms;
 }
-.stack_p:nth-child(5){
+
+.stack_p:nth-child(5) {
   transition-delay: 580ms;
 }
 
-.stack_p:nth-child(6){
+.stack_p:nth-child(6) {
   transition-delay: 650ms;
 }
 
-.stack_p:nth-child(7){
+.stack_p:nth-child(7) {
   transition-delay: 720ms;
 }
 
@@ -268,11 +273,11 @@ display: block;
   }
 }
 
-.Description{
+.Description {
   color: white;
   text-shadow: 0.7px 0 0 #000, 0 -0.7px 0 #000, 0 0.7px 0 #000, -0.7px 0 0 #000;
 }
 
 
-/*====== Custom animation ======*/
 
+/*====== Custom animation ======*/
