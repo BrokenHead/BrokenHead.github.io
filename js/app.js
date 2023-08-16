@@ -47,7 +47,7 @@ const clack_timeline = {
 const tween2 = new TimelineLite();
 
 tween2.add(
-    TweenLite.to(".choc_clack", 0.7, {
+    TweenLite.to(".choc_clack", 0.8, {
         bezier: clack_timeline
 
 
